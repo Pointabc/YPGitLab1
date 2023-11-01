@@ -18,6 +18,10 @@ origin    git@github.com:%ИМЯ_АККАУНТА%/%ИМЯ-ПРОЕКТА%.git (
 origin    git@github.com:%ИМЯ_АККАУНТА%/%ИМЯ-ПРОЕКТА%.git (push) 
 ```
 ----
-
+### Команды Git
+#### log
+1. Полный лог репозитария **git log**
+2. Сокращенный лог **git log --oneline**
+----
 [Яндекс Практикум](https://practicum.yandex.ru/)  
 ----
