@@ -55,7 +55,7 @@ graph LR;
 2.2 в статус Tracked  
 ```mermaid
 ---
-title: "Перервод в стутус Traced"
+title: "Перервод в стутус Tracked"
 ---
 graph LR;
     A[Staged] -->|+| B[$git commit] -->|=| C[Tracked]
@@ -64,13 +64,12 @@ graph LR;
     style C fill:#3f3,stroke:#333,stroke-width:4px
 ```
 2.3 в стутус Untracked  
-git reset HEAD [filename] - возмоэжно не так)).
+git reset HEAD [filename] - возмоэжно не так)).  
 Changes to be committed: - обозначает статус Staged  
 3. Tracked  
 Статус файла - уже отслеживаются изменения. После выполнения команды **git commit**, файл получает статус Tracked.  
 Можно перевести:  
-3.3 Modified
-3.4 
+3.3 Modified - изменить содержание файла и сохранить его.   
 4. Modified  
 При изменении отслеживаемого файла, git переводит статус файла в статус Modified.  
 Выводится в списке **Changes not staged for commit**  
