@@ -37,12 +37,10 @@ B --> C{Let me think};
 C -->|One| D[Laptop];
 C -->|Two| E[iPhone];
 C -->|Three| F[fa:fa-car Car];
-```
-```mermaid
-graph LR
-  A --- B
-  B-->C[fa:fa-ban forbidden]
-  B-->D(fa:fa-spinner);
+
+A --- B
+B-->C[fa:fa-ban forbidden]
+B-->D(fa:fa-spinner);
 ```
 <и тут пустая строка!>  
 When $a \ne 0$, there are two solutions to $(ax^2 + bx + c = 0)$ and they are 
