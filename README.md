@@ -36,9 +36,8 @@ origin    git@github.com:%ИМЯ_АККАУНТА%/%ИМЯ-ПРОЕКТА%.git (
 Существует 4 статуса:
 1. Untracked  
 Статус нового файла в папке локального коммита. Git не ведет и не знает историю изменений.  
-Можно перевести:
-1. в статус Staged.  
-Untracked + git add = Staged
+Можно перевести:  
+1.1 в статус Staged. Untracked + git add = Staged
 ```mermaid
 ---
 title: "Перервод в стутус Staged"
@@ -50,34 +49,28 @@ graph LR;
     style C fill:#3f3,stroke:#333,stroke-width:4px
 ```
 2. Staged  
-После выполнения команды git add, файл получает статус Staged.
-Можно перевести в статус Tracked 
-
-и в стутус Untracked
-
-Changes to be committed: - обозначает статус Staged
-3. Tracked  
-Статус файла - уже отслеживаются изменения. После выполнения команды **git commit**, файл получает статус Tracked.
-4. Modified  
-При изменении отслеживаемого файла, git переводит статус файла в статус Modified.
-
-Changes not staged for commit:
-
+После выполнения команды git add, файл получает статус Staged.  
+Выводится в списке **Changes to be committed**
+Можно перевести:  
+2.2 в статус Tracked  
 ```mermaid
-%% описание схемы
+---
+title: "Перервод в стутус Staged"
+---
 graph LR;
-    A[Christmas] -->|Get money| B(Go shopping)
-    B --> C{Let me think}
-    C -->|One| D[Laptop]
-    C -->|Two| E[iPhone]
-    C -->|Three| F[fa:fa-car Car]
-    A --- B
-    B-->C[fa:fa-ban forbidden]
-    B-->D(fa:fa-spinner);
+    A[Staged] -->|+| B[$git commit] -->|=| C[Tracked]
+    style A fill:#3f3,stroke:#333,stroke-width:4px
+    style B fill:#3f3,stroke:#333,stroke-width:4px
+    style C fill:#3f3,stroke:#333,stroke-width:4px
 ```
-<и тут пустая строка!>  
-When $a \ne 0$, there are two solutions to $(ax^2 + bx + c = 0)$ and they are 
-$$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
+2.3 в стутус Untracked  
+git reset HEAD [filename]  
+Changes to be committed: - обозначает статус Staged  
+3. Tracked  
+Статус файла - уже отслеживаются изменения. После выполнения команды **git commit**, файл получает статус Tracked.  
+4. Modified  
+При изменении отслеживаемого файла, git переводит статус файла в статус Modified.  
+Выводится в списке **Changes not staged for commit**  
 
 ----
 [Яндекс Практикум](https://practicum.yandex.ru/)  
