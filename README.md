@@ -22,6 +22,24 @@ origin    git@github.com:%ИМЯ_АККАУНТА%/%ИМЯ-ПРОЕКТА%.git (
 #### log
 1. Полный лог репозитария **git log**
 2. Сокращенный лог **git log --oneline**
+
+HEAD -- это голова.
+Коммит -- это всему голова.
+Статусы файлов:
+<тут пустая строка!>
+
+```mermaid
+graph LR;
+%% описание схемы
+
+A[Christmas] -->|Get money| B(Go shopping);
+B --> C{Let me think};
+C -->|One| D[Laptop];
+C -->|Two| E[iPhone];
+C -->|Three| F[fa:fa-car Car];
+```
+<и тут пустая строка!>
+
 ----
 [Яндекс Практикум](https://practicum.yandex.ru/)  
 ----
