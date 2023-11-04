@@ -29,7 +29,6 @@ HEAD -- это голова.
 <тут пустая строка!>
 
 ```mermaid
-graph LR;
 %% описание схемы
 graph LR;
     A[Christmas] -->|Get money| B(Go shopping)
