@@ -31,14 +31,22 @@ HEAD -- это голова.
 ```mermaid
 graph LR;
 %% описание схемы
-
+graph TD;
 A[Christmas] -->|Get money| B(Go shopping);
 B --> C{Let me think};
 C -->|One| D[Laptop];
 C -->|Two| E[iPhone];
 C -->|Three| F[fa:fa-car Car];
 ```
-<и тут пустая строка!>
+```mermaid
+graph LR
+  A --- B
+  B-->C[fa:fa-ban forbidden]
+  B-->D(fa:fa-spinner);
+```
+<и тут пустая строка!>  
+When $a \ne 0$, there are two solutions to $(ax^2 + bx + c = 0)$ and they are 
+$$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
 
 ----
 [Яндекс Практикум](https://practicum.yandex.ru/)  
